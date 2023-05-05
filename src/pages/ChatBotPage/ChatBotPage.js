@@ -5,6 +5,7 @@ export default function ChatBot() {
   return (
     <>
       <TopHeader heading="AmEx Assistant" subHeading="Our live AI will respond within seconds" color={true} dropShadow={true} />
+      <Footer color={true} dropShadow ={true} />
     </>
   );
 }
