@@ -1,0 +1,29 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/global" as *;
+
+.footer{
+   display: flex; 
+   flex-direction: row;
+   position: fixed;   
+   bottom: 2rem;
+   left: 1rem;
+   width: 100%;
+   padding: 0 16px 32px 16px;
+   &__label{
+      color: $NeutralsLight;
+      padding: 1rem 1.75rem;
+   }
+   &__text{
+      background-color: $primaryMutedNavy;
+      border-radius: 4px;
+      color: $NeutralsLight;
+      text-align: center;
+      padding: 1rem 1.75rem;
+      border: none;
+      width: 100%;
+      // @include p;
+   }
+   &__text:active{
+      border: none;
+   }
+}
