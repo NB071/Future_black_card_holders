@@ -1,3 +1,4 @@
+@use "./colors" as *;
 // fonts
 h1 {
         font-weight: 600;
@@ -23,4 +24,8 @@ p {
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: $primaryDarkerNavy;
+}
+a {
+    text-decoration: none;
 }
