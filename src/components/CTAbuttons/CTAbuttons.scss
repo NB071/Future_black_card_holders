@@ -1,12 +1,16 @@
-@use "../../styles/partials/colors";
-
+@use "../../styles/partials/colors" as *;
 .CTA {
   display: flex;
-  align-self: end; 
+  align-self: end;
   &__button {
     padding: 0.65rem 1rem;
     border-radius: 10px;
     border: none;
-    background-color: #e9ecf6;
+    background-color: $primaryLightBluegrey;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+      background-color: rgba(233, 236, 246, 0.786)
+    }
   }
 }
