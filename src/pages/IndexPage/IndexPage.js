@@ -4,11 +4,26 @@ import { Link } from "react-router-dom";
 import MessageIcon from "../../assets/icons/Chatbot.svg";
 import infoIcon from "../../assets/icons/Info.svg";
 import feedbackIcon from "../../assets/icons/Feedback.svg";
+import { motion } from "framer-motion"
+
 export default function IndexPage() {
+  const pageVariants = {
+    initial: { opacity: 0 },
+    animate: { opacity: 1 },
+    exit: { opacity: 0 }
+  };
+
   return (
     <>
       <TopHeader heading="Support" color={false} dropShadow={false} />
-      <main className="support">
+      <motion.main
+        className="support"
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        variants={pageVariants}
+        transition={{ duration: 0.8 }}
+      >
         <h1 className="support__heading">What can we do for you today?</h1>
         <div className="support__options">
           <div className="support__option-container">
@@ -46,7 +61,7 @@ export default function IndexPage() {
             </div>
           </div>
         </div>
-      </main>
+      </motion.main>
     </>
   );
 }

@@ -1,11 +1,22 @@
 import "./TopHeader.scss";
 import Arrow from "../../assets/icons/Back Arrow.svg";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function TopHeader({ heading, subHeading, color, dropShadow }) {
   const navigate = useNavigate();
+  const pageVariants = {
+    initial: { opacity: 0 },
+    animate: { opacity: 1 },
+    exit: { opacity: 0 },
+  };
   return (
-    <header
+    <motion.header
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      variants={pageVariants}
+      transition={{ duration: 0.8 }}
       className={`header ${color ? "header--light" : ""} ${
         dropShadow ? "header--shadow" : ""
       }`}
@@ -20,6 +31,6 @@ export default function TopHeader({ heading, subHeading, color, dropShadow }) {
         {heading && <h2 className="header__heading-text">{heading}</h2>}
         {subHeading && <p className="header__sub-heading-text">{subHeading}</p>}
       </div>
-    </header>
+    </motion.header>
   );
 }

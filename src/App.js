@@ -1,12 +1,13 @@
-import "./styles/main.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import IndexPage from "./pages/IndexPage/IndexPage"
+import "./styles/main.scss";
+import IndexPage from "./pages/IndexPage/IndexPage";
+import ChatBotPage from "./pages/ChatBotPage/ChatBotPage";
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<IndexPage />} />
-        <Route path="/chat-bot" element={<h1>Chat bot</h1>} />
+        <Route path="/chat-bot" element={<ChatBotPage />} />
       </Routes>
     </BrowserRouter>
   );
