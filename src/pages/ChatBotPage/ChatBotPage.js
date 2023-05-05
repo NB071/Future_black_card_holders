@@ -3,6 +3,7 @@ import Footer from "../../components/footer/Footer";
 import UserDialog from "../../components/userDialog/UserDialog";
 import AIDialog from "../../components/AIDialog/AIDialog";
 import CTAbuttons from "../../components/CTAbuttons/CTAbuttons";
+import displayWidget from '../../scripts/displayWidget';
 import "./ChatBotPage.scss";
 
 import { Link } from "react-router-dom";
@@ -25,6 +26,7 @@ export default function ChatBot() {
         <UserDialog prompt="Cancel a Card" />
       </section>
       <Footer />
+      {displayWidget()}
     </>
   );
 }
