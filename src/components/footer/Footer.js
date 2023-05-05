@@ -1,5 +1,6 @@
 import "./Footer.scss";
 import { motion } from "framer-motion";
+import EnterIcon from "../../assets/icons/Enter.svg"
 
 export default function Footer() {
   const pageVariants = {
@@ -22,6 +23,7 @@ export default function Footer() {
           className="footer__input"
           placeholder="Please enter a message..."
         />
+        <img className="footer__enter-icon" src={EnterIcon} alt="Enter a message" />
       </form>
     </motion.footer>
   );

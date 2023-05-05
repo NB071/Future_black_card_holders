@@ -5,4 +5,11 @@
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    // overflow: scroll;
+    // overflow-x: hidden;
+    &__CTA-options {
+        display: flex;
+        gap: 0.8125rem;
+        flex-wrap: wrap;
+    }
 }

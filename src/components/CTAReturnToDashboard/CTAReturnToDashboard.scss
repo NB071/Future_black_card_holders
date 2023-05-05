@@ -1,0 +1,15 @@
+@use "../../styles/partials/colors" as *;
+.CTA-return {
+    display: flex;
+    align-self: center;
+    &__button {
+      padding: 0.65rem 1rem;
+      border-radius: 10px;
+      border: none;
+      background-color: $accentYellow;
+      cursor: pointer;
+      transition: all .3s;
+      color: #333333;
+    }
+
+}
