@@ -1,0 +1,33 @@
+@use "../../styles/partials/colors" as *;
+.support {
+  &__heading {
+    width: 90%;
+    padding: 0.75rem 1rem;
+    color: $NeutralsLight;
+  }
+&__options {
+    margin-top: 3rem;
+}
+
+  &__option-item {
+    margin-top: 1rem;
+    padding: .75rem;
+    display: flex;
+    gap: 1.5938rem;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__option-container {
+    transition: all 0.5s;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: fit-content;
+    padding-right: 1rem;
+    &:hover {
+        background-color: #1073ca18;
+    }
+  }
+  &__option-text {
+    color: $NeutralsLight;
+  }
+}
