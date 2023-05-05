@@ -1,0 +1,12 @@
+@use "../../styles/partials/colors";
+
+.CTA {
+  display: flex;
+  align-self: end; 
+  &__button {
+    padding: 0.65rem 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #e9ecf6;
+  }
+}

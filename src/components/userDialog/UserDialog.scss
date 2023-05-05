@@ -1,0 +1,27 @@
+@use "../../styles/partials/colors" as *;
+.user-dialog {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: end;
+  &__container {
+      width: fit-content;
+  }
+  &__frame-wapper {
+    border-radius: 20px 20px 0px 20px;
+    background-color: $primaryDarkerNavy;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #ffffff;
+  }
+
+  &__text {
+    color: $NeutralsLight;
+  }
+  &__date {
+    font-weight: 300;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    color: #c8c8c8;
+    margin-top: 0.3125rem;
+  }
+}

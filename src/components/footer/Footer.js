@@ -1,16 +1,28 @@
 import "./Footer.scss";
+import { motion } from "framer-motion";
 
 export default function Footer() {
+  const pageVariants = {
+    initial: { opacity: 0 },
+    animate: { opacity: 1 },
+    exit: { opacity: 0 },
+  };
   return (
-    <footer className="footer">
+    <motion.footer
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      variants={pageVariants}
+      transition={{ duration: 0.8 }}
+      className="footer"
+    >
       <form>
-        <label><p className="footer__label">Enter message</p></label>
         <input
           type="text"
-          className="footer__text"
-          placeholder="Please enter a message"
+          className="footer__input"
+          placeholder="Please enter a message..."
         />
       </form>
-    </footer>
+    </motion.footer>
   );
 }

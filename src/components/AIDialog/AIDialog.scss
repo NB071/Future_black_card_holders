@@ -1,0 +1,25 @@
+@use "../../styles/partials/colors" as *;
+.AI-dialog {
+    display: flex;
+    flex-direction: column;
+    width: fit-content; 
+    // align-items: start;   
+  &__container {
+    border-radius: 0px 20px 20px 20px;
+    background-color: $primaryDarkerNavy;
+    padding: 0.75rem 1.5rem;
+    background-color: $primaryMutedNavy;
+  }
+
+  &__text {
+    color: $NeutralsLight;
+  }
+  &__date {
+    font-weight: 300;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    color: #C8C8C8;
+    margin-top: 0.3125rem;
+    align-self: start;
+  }
+}
